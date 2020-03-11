@@ -12,7 +12,9 @@ body {
 
   .timer {
     text-align: center;
-    width: 150px;
+    font-size: 50px;
+    width: 300px;
+    height: 100px;
     padding: 15px;
     background: rgb(15, 5, 5);
     color: rgba($color: #f3f3f3, $alpha: 1);
@@ -20,11 +22,11 @@ body {
   }
 
   .buttons {
-    width: 150px;
+    width: 300px;
+    height: 70px;
     text-align: center;
     padding: 15px;
     background: rgba($color: #f3f3f3, $alpha: 1);
     border-radius: 0px, 0px, 8px, 8px;
-    flex-direction: row;
   }
 }

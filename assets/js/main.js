@@ -11,16 +11,19 @@ let timer_element = document.getElementById("timer");
 start_btn.addEventListener("click", function() {
   timer = setInterval(TimerHandler, 1000);
   reset_btn.disabled = true;
+  start_btn.disabled = true;
 });
 
 stop_btn.addEventListener("click", function() {
   timer = clearInterval(timer);
   reset_btn.disabled = false;
+  start_btn.disabled = false;
 });
 
 reset_btn.addEventListener("click", function() {
   timer = clearInterval(timer);
   reset_btn.disabled = true;
+  start_btn.disabled = false;
   sec = 0;
   min = 0;
   hour = 0;
